@@ -1,0 +1,79 @@
+body { 
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.spoc {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 20%;
+    width: 20%;
+    transition: all .2s ease-in-out;
+}
+
+.spoc:hover {
+    transform: scale(1, 1);
+}
+
+.banner {
+    text-align: center;
+}
+
+.clipboard {
+    height: 20%;
+    width: 20%;
+}
+
+.code-icon {
+    height: 20%;
+    width: 20%;
+}
+
+.lessons,
+.high-schools,
+.code,
+.moringa-school,
+.activities {
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.projectA {
+    contain: content;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.projectB {
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.student-board {
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.student-board img {
+    height: 20%;
+    width: 20%;
+}
+
+.projectA img,
+.projectB img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}

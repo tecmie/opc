@@ -1,0 +1,176 @@
+@media screen and (max-width: 320px){
+    .example td {
+        border: 1px solid black;
+        padding: 1em;
+    }
+    
+    .example #read_more {
+        float: right;
+        border: 1px solid black;   
+        margin-bottom: 0;
+    } 
+} 
+
+@media screen and (min-width:320px) and (max-width:640px){
+    .example td {
+        border: 1px solid black;
+        padding: 1em;
+    }
+    
+    .example #read_more {
+        float: right;
+        border: 1px solid black;   
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (orientation:portrait) {
+.example td {
+        border: 1px solid black;
+        padding: 1em;
+    }
+    
+    .example #read_more {
+        float: right;
+        border: 1px solid black;   
+        margin-bottom: 0;
+    }
+}
+
+@media screen and(orientation: landscape) {
+
+}
+
+body {
+    font-size: 1.3em;
+    font-family: 'Work Sans', sans-serif;
+} 
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/School_children_%28Lukhanyo_Primary_School%2C_Zwelihle_Township_%28Hermanus%2C_South_Africa%29_b_03.jpg/1280px-School_children_%28Lukhanyo_Primary_School%2C_Zwelihle_Township_%28Hermanus%2C_South_Africa%29_b_03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#overlay {
+    position: fixed;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 0.1% 0;
+    margin-right: 0;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-transform: uppercase;
+    padding: 0.625em;
+    margin-right: 0;
+    text-decoration: none;
+    display: block;
+    color: rgba(255, 255, 255, 0.733);
+}
+
+ul li a:hover {
+    box-shadow: 0 0 0.625em rgba(0, 0, 0, 0.1), insert 0 0 0.0625em rgba(255, 255, 255, 0.6);
+    background-color: rgba(107, 93, 84, 0.678);
+    color: rgba(0, 35, 122, 0.7);
+}
+
+#slogan {
+    height: 16em;
+    /* text-align: center; */
+}
+
+#slogan h3 {
+    color: white;
+}
+
+#slogan h2 {
+    margin-top: 3em;
+    color: white;
+}
+
+#scholar {
+    /* text-align: center; */
+    margin-top: 5em;
+    background-color: rgba(0, 0, 0, 0.507);
+    /* height: 25em; */
+    display: flow-root;
+    /* flex-direction: row; */
+    margin-bottom: 0;
+}
+
+#scholar h3, p {
+    color: white;
+}
+
+#scholar img {
+    float: right;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 50%;
+    width: 40%;
+    border-radius: 5%; 
+}
+
+#activities {
+    background-color: rgba(255, 255, 255, 0.39);
+    margin: 2em, 0, 2em, 0;
+}
+
+#activities p {
+    color: black;
+}
+
+.music  {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.writing {
+    margin-left: 0em;
+} 
+
+.example {
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+.example td {
+    border: 1px solid black;
+    padding: 2em;
+}
+
+.example #read_more {
+    margin-top: 0.7em;
+    float: right;
+    border: 1px solid black;   
+    margin-bottom: 0;
+}
+
+.center {
+    margin: auto;
+    margin-left: 50%;
+}

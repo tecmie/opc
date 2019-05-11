@@ -1,0 +1,171 @@
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+#bootstrap CSON
+'.source.coffee':
+    'snippets':
+	    'prefix':'snip'
+		    'body':"""
+				'.source.${1:.gfm}':
+						'${2:snippet_name}':
+								    'prefix':'${3:short_name}'
+											'body':'${4:actual_content}'$5
+												"""
+												    'sn':
+													    'prefix':'sn'
+														    'body':"""
+																'${1:snippet_name}':
+																		'prefix':'${2:short_name}'
+																				'body':'${3:actual_content}'$4
+																					"""
+
+#html & css in markdown
+'.source.gfm':
+    'basic-structure':
+	    'prefix':'dism'
+		    'body':"""
+				    ```html
+						    <!DOCTYPE html>
+								    <html>
+										    <head>
+													<title>$1</title>
+															    <link rel="stylesheet" type="text/css" href="index.css">
+																	    </head>
+																			    <body>
+																						<h1>${2:The Planets of The Known Unniverse}</h1>
+																								    <p>There are 9 planets in the Unniverse</p>
+																											$3
+
+																													</body>
+																															</html>
+																																	```$4
+																																			"""
+
+																																			    'paragraphs':
+																																				    'prefix':'pdis'
+																																					    'body':'<p ${1:class="para"}>${2:Lorem Ipsum}</p>$3'
+
+																																						'html_element':
+																																							'prefix':'hel'
+																																								'body':'<${1:element} ${2:attributes}> ${3:Lorem Ipsum} </$1>'
+
+																																								    'Lesson':
+																																									    'prefix':'lsn'
+																																										    'body':'## Lesson $1'
+																																											'class selector':
+																																												'prefix':'sel'
+																																													'body':'${1:.class}{
+																																																${2:color}:${3:yellow};$4
+																																																	    }'
+																																																		'Introduction':
+																																																			'prefix':'intro'
+																																																				'body':'**Introduction:**
+
+																																																					$1'
+																																																					    'Instructions':
+																																																						    'prefix':'ins'
+																																																							    'body':'**Instructions:**
+
+																																																								    $1'
+																																																									'moringa_unesco image':
+																																																										'prefix':'msun'
+																																																											'body':'![Moringa School and Unesco](../images/moringa_unesco.png)$1'
+																																																											    'Horizontal line':
+																																																												    'prefix':'ln'
+																																																													    'body':'**************************$1'
+																																																														'Image extra':
+																																																															'prefix':'xmsun'
+																																																																'body':'<div style="text-align:center; vertical-align:center;background-color:white; width:300px; margin:auto">
+																																																																	<img src="../images/moringa_unesco.png" /> </div>'
+																																																																	    'css distro':
+																																																																		    'prefix':'cdis'
+																																																																			    'body':"""
+																																																																					```css
+																																																																						    ${1:p}{
+																																																																									    ${2:color:red;}
+																																																																											}
+																																																																												    ```
+																																																																														$3
+																																																																															"""
+																																																																															    'jasmine distro':
+																																																																																    'prefix':'jdis'
+																																																																																	    'body':"""
+																																																																																			```js
+																																																																																				    //failure message
+																																																																																						/*${1:Failure message...}*/
+																																																																																							    ${2:expect(document.getElementsByTagName("strong")[0].innerHTML).not.toBeNull()}
+																																																																																									${3:expect(document.getElementsByTagName("img")[1].getAttribute("alt")).not.toBeNull()} $4
+																																																																																										    ```$5
+																																																																																											    """
+																																																																																												'div distro':
+																																																																																													'prefix':'ddist'
+																																																																																														'body':"""
+																																																																																															    <div class="container">
+																																																																																																	    <h1>The planets of our Solar System.</h1>
+																																																																																																			    <h2>Brief summary</h2>
+																																																																																																					    <p class="summary article" id="summary">
+																																																																																																								The solar system is a gravitationally bound system consisting of the sun and 8 known planets revolving around it.
+																																																																																																										</p>
+
+																																																																																																												<h2>Planets</h2>
+																																																																																																														<p class="article" id="planets">
+																																																																																																																    Heavenly bodies revolving around the sun. They all rotate on their own axis at different speeds in an anticlockwise direction, except for venus.
+																																																																																																																		    </p>
+																																																																																																																				</div>
+																																																																																																																					"""
+
+#html
+'.text.html.basic':
+    'spoc-menu':
+	    'prefix':'smen'
+		    'body':"""
+				<!-- Site Menu -->
+					    <menu>
+							    <ul class="root-menu">
+										<li>Home</li>
+												    <li>Register</li>
+															<li>Feedback</li>
+																	    <li>Contact</li>
+																			    </ul>
+																					</menu>
+																						"""
+																						    'html comment':
+																							    'prefix':'cmt'
+																								    'body':'<!--${1:comment}-->$2'
+
+# '.source.html':
+#   'HTML ':
+#	'prefix':'ddist'
+#	'body':"""
+#	    <div class="container">
+#		<h1>The planets of our Solar System.</h1>
+#		<h2>Brief summary</h2>
+#		<p class="summary article" id="summary">
+#		    The solar system is a gravitationally bound system consisting of the sun and 8 known planets revolving around it.
+#		</p>
+#
+#		<h2>Planets</h2>
+#		<p class="article" id="planets">
+#		    Heavenly bodies revolving around the sun. They all rotate on their own axis at different speeds in an anticlockwise direction, except for venus.
+#		</p>
+#	    </div>
+#	"""
+
